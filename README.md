@@ -1,5 +1,7 @@
 <h1>Binary Disaster Tweet Classification Using NLP and Deep Learning</h1>
 
+<p>This porject Also need Glove Embedding Files to run</p>
+
 <p>This project implements a deep learning model to classify tweets as either related to a disaster or not. Using advanced NLP techniques, the model leverages architectures such as <strong>Bidirectional LSTM (Bi-LSTM)</strong> and <strong>Bidirectional GRU (Bi-GRU)</strong> to achieve reliable classification. The goal is to create a robust classifier that can distinguish disaster-related tweets, aiding in emergency response scenarios.</p>
 
 <h2>Dataset</h2>
