@@ -1,5 +1,3 @@
-# Binary-Disaster-Tweet-Classification-Using-NLP-and-Deep-Learning
-
 This project implements a deep learning model to classify tweets as either related to a disaster or not. Using advanced NLP techniques, the model leverages architectures such as Bidirectional LSTM (Bi-LSTM) and Bidirectional GRU (Bi-GRU) to achieve reliable classification. The goal is to create a robust classifier that can distinguish disaster-related tweets, aiding in emergency response scenarios.
 
 Dataset
@@ -21,8 +19,7 @@ Bidirectional LSTM and GRU Layers: Capture dependencies in the text from both di
 Dropout and Batch Normalization: Prevent overfitting and enhance generalization.
 Fully Connected Layers: To consolidate learned features for final classification.
 Results
-Model Performance:
-
+Model Performance
 Bi-LSTM:
 
 Precision: 0.825
@@ -34,7 +31,7 @@ Precision: 0.832
 Recall: 0.784
 F1 Score: 0.807
 Evaluation Metrics
-A confusion matrix and classification report offer insights into the model's precision, recall, and F1-score, providing a detailed breakdown of performance across true positive, false positive, and other prediction metrics.
+A confusion matrix and classification report offer insights into the model's precision, recall, and F1-score, providing a detailed breakdown of performance across true positives, false positives, and other prediction metrics.
 
 Future Improvements
 Potential future improvements include:
