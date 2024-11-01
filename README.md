@@ -1,41 +1,56 @@
-This project implements a deep learning model to classify tweets as either related to a disaster or not. Using advanced NLP techniques, the model leverages architectures such as Bidirectional LSTM (Bi-LSTM) and Bidirectional GRU (Bi-GRU) to achieve reliable classification. The goal is to create a robust classifier that can distinguish disaster-related tweets, aiding in emergency response scenarios.
+<h1>Binary Disaster Tweet Classification Using NLP and Deep Learning</h1>
 
-Dataset
-The dataset, sourced from a Kaggle challenge, contains tweets with binary labels indicating whether each tweet is related to a disaster or not.
+<p>This project implements a deep learning model to classify tweets as either related to a disaster or not. Using advanced NLP techniques, the model leverages architectures such as <strong>Bidirectional LSTM (Bi-LSTM)</strong> and <strong>Bidirectional GRU (Bi-GRU)</strong> to achieve reliable classification. The goal is to create a robust classifier that can distinguish disaster-related tweets, aiding in emergency response scenarios.</p>
 
-Dataset Format
-The dataset is in CSV format with two main columns:
+<h2>Dataset</h2>
+<p>The dataset, sourced from a Kaggle challenge, contains tweets with binary labels indicating whether each tweet is related to a disaster or not.</p>
 
-text: The content of the tweet.
-target: The binary label where 1 indicates a disaster-related tweet, and 0 denotes non-disaster content.
-Preprocessing
-Text data is tokenized and standardized using padding to ensure consistent sequence length for model input.
+<h3>Dataset Format</h3>
+<p>The dataset is in CSV format with two main columns:</p>
+<ul>
+    <li><code>text</code>: The content of the tweet.</li>
+    <li><code>target</code>: The binary label where <code>1</code> indicates a disaster-related tweet, and <code>0</code> denotes non-disaster content.</li>
+</ul>
 
-Model Architecture
-The model architecture includes multiple layers:
+<h2>Preprocessing</h2>
+<p>Text data is tokenized and standardized using padding to ensure consistent sequence length for model input.</p>
 
-Embedding Layer: Converts words into vectors, enhancing input representation.
-Bidirectional LSTM and GRU Layers: Capture dependencies in the text from both directions for a nuanced understanding.
-Dropout and Batch Normalization: Prevent overfitting and enhance generalization.
-Fully Connected Layers: To consolidate learned features for final classification.
-Results
-Model Performance
-Bi-LSTM:
+<h2>Model Architecture</h2>
+<p>The model architecture includes multiple layers:</p>
+<ul>
+    <li><strong>Embedding Layer</strong>: Converts words into vectors, enhancing input representation.</li>
+    <li><strong>Bidirectional LSTM and GRU Layers</strong>: Capture dependencies in the text from both directions for a nuanced understanding.</li>
+    <li><strong>Dropout and Batch Normalization</strong>: Prevent overfitting and enhance generalization.</li>
+    <li><strong>Fully Connected Layers</strong>: To consolidate learned features for final classification.</li>
+</ul>
 
-Precision: 0.825
-Recall: 0.732
-F1 Score: 0.775
-Bi-GRU:
+<h2>Results</h2>
 
-Precision: 0.832
-Recall: 0.784
-F1 Score: 0.807
-Evaluation Metrics
-A confusion matrix and classification report offer insights into the model's precision, recall, and F1-score, providing a detailed breakdown of performance across true positives, false positives, and other prediction metrics.
+<h3>Model Performance</h3>
+<ul>
+    <li><strong>Bi-LSTM</strong>:
+        <ul>
+            <li>Precision: 0.825</li>
+            <li>Recall: 0.732</li>
+            <li>F1 Score: 0.775</li>
+        </ul>
+    </li>
+    <li><strong>Bi-GRU</strong>:
+        <ul>
+            <li>Precision: 0.832</li>
+            <li>Recall: 0.784</li>
+            <li>F1 Score: 0.807</li>
+        </ul>
+    </li>
+</ul>
 
-Future Improvements
-Potential future improvements include:
+<h2>Evaluation Metrics</h2>
+<p>A confusion matrix and classification report offer insights into the model's <strong>precision</strong>, <strong>recall</strong>, and <strong>F1-score</strong>, providing a detailed breakdown of performance across true positives, false positives, and other prediction metrics.</p>
 
-Experimenting with transformer-based architectures such as BERT for improved accuracy.
-Utilizing data augmentation techniques to expand and diversify the training data.
-Further tuning hyperparameters to enhance model performance.
+<h2>Future Improvements</h2>
+<p>Potential future improvements include:</p>
+<ul>
+    <li>Experimenting with transformer-based architectures such as <strong>BERT</strong> for improved accuracy.</li>
+    <li>Utilizing data augmentation techniques to expand and diversify the training data.</li>
+    <li>Further tuning hyperparameters to enhance model performance.</li>
+</ul>
